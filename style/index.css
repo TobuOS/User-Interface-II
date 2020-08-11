@@ -31,18 +31,14 @@ time, mark, audio, video {
 }
 
 body {
-    border-style: solid black;
-    border-width:1px;
-    background-color: rgb(71, 71, 69);
-    
 }
     
 
 #top {
     display:flex;
     justify-content: space-between;
-    width: 100%;
-    
+    width: 80%;
+    margin: 0 auto;
     
 }
 
@@ -67,14 +63,13 @@ nav a{
     width: 20%;
     border-top-style:solid;
     border-top-color: rgb(35, 25, 63);
-    color: white;
+    color: grey;
     border-top-width: 1%;
     border-top-right-radius: 20%;
     border-top-left-radius: 20%;
     text-align: center;
     text-decoration: none;
     font-family: 'Lobster', cursive;
-    transition: color 1.3sec;
     
 
 }
@@ -85,29 +80,31 @@ nav a:hover {
 }
 
 .sectionOne {
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
     width: 80%;
     height: 30%;
-    margin: auto;
+    margin: 0 auto;
     padding-top:2%;
 
 }
 
 .sectionOne #img-contain {
-    height: 40%;
-    margin: auto;
+    width: 50%;
+    margin: 0 auto;
+    align-content: center;
 
 }
 .sectionOne img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    margin: auto;
-    border-radius: 20%;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 #myProjects {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.2rem;
@@ -137,21 +134,42 @@ nav a:hover {
     
 }
 
-.multi #stars {
-    border-radius: 20%;
+.multi .stars {
+    border-radius: 50%;
     margin: auto;
 }
 
 .multi h3 {
+    font-family: 'Lobster', cursive;
+    color: goldenrod;
+    padding: 1%;
 
 }
 
 footer {
-    height: 10%;
-    color: black;
-    width: 100%;
+    background-color: grey;
+    width: 80%;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 1%;
+    text-decoration: none;
+    margin: 0 auto;
 }
 
-footer
+footer #contact {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3%;
+    width: 20%;
+    border-width: 1%;
+    border-radius: 20%;
+    border-color: rgb(35, 25, 63);
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+footer #contact:hover {
+    color: maroon;
+}
